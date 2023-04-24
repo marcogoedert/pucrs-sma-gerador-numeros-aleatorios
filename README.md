@@ -26,3 +26,42 @@ onde X<sub>i</sub> é o número pseudo-aleatório gerado na iteração i, X<sub>
 Para gerar os números pseudo-aleatórios, é necessário definir os valores das constantes a, c e M. Para isso, foi utilizado o método de Park e Miller (Numerical Recipes), que utiliza os valores:
 
 ![equation](https://latex.codecogs.com/gif.latex?a%20%3D%201664525%2C%20c%20%3D%201013904223%2C%20m%20%3D%202%5E%7B32%7D)
+
+Para a semente, foi utilizado o tempo atual do relógio.
+
+O programa foi desenvolvido em Python 3.8.10 e utiliza a biblioteca matplotlib para gerar o gráfico de dispersão.
+
+![Gráfico de dispersão](./scatter.png)
+
+## Execução
+
+Para executar o programa, é necessário ter o Python 3 instalado. Para instalar o Python 3 no Ubuntu, execute o comando:
+
+```bash
+sudo apt install python3
+```
+
+Para instalar o Python 3 no Windows, acesse o site https://www.python.org/downloads/windows/ e baixe o instalador.
+
+Para instalar a biblioteca matplotlib, execute o comando:
+
+```bash
+pip3 install matplotlib
+```
+
+Para executar o programa, execute o comando:
+
+```bash
+python3 main.py
+```
+
+O programa irá gerar o arquivo `numbers.txt` com os números pseudo-aleatórios gerados, o arquivo `scatter.png` com o gráfico de dispersão e o arquivo `variables.txt` com os valores das constantes utilizadas. A seed utilizada será o tempo atual do relógio. Alternativamente, caso queira utilizar uma seed específica, execute o comando:
+
+```bash
+python3 main.py --seed <integer>
+```
+
+## Referências
+
+- https://en.wikipedia.org/wiki/Linear_congruential_generator
+- https://www.unf.edu/~cwinton/html/cop4300/s09/class.notes/LCGinfo.pdf
