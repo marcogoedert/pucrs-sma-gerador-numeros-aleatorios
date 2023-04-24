@@ -1,10 +1,15 @@
 # SMA - Desenvolvimento de um gerador de números pseudo-aleatórios
 
 Pontifícia Universidade Católica do Rio Grande do Sul
+
 Escola Politécnica
+
 Engenharia de Software
+
 4611G-04 - Simulação e Métodos Analíticos
+
 Turma 031 - 2023/1
+
 Aluno: Marco Goedert
 
 ## Enunciado
