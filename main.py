@@ -1,3 +1,5 @@
+# Author: Marco Goedert
+
 import argparse
 import time
 import matplotlib.pyplot as plt
