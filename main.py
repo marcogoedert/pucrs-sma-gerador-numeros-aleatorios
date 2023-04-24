@@ -40,7 +40,6 @@ def plot_scatter(numbers):
     plt.ylabel('Valor')
     plt.title('Gráfico de Dispersão dos Números Pseudoaleatórios')
     plt.savefig('scatter.png')
-    plt.show()
 
 # Argumentos de linha de comando
 parser = argparse.ArgumentParser(description='Gera números pseudoaleatórios usando o método congruente linear.')
@@ -48,7 +47,7 @@ parser.add_argument('--seed', type=int, help='Define a semente do gerador.')
 args = parser.parse_args()
 
 clg = CongruentLinearGenerator(seed=args.seed)
+save_variables(clg.seed, clg.a, clg.c, clg.m, 'variables.txt')
 numbers = generate_numbers(clg, 1000)
 save_numbers(numbers, 'numbers.txt')
-save_variables(clg.seed, clg.a, clg.c, clg.m, 'variables.txt')
 plot_scatter(numbers)
